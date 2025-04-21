@@ -1,4 +1,4 @@
-name: Run The tests
+name: Test projects
 on:
   push:
     branches: [main]
@@ -12,8 +12,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Up the server
-        run: npm run dev
+      #   - name: Up the server
+      #     run: npm run dev
 
       - name: Run tests
         run: npm test
