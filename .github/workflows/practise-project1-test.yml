@@ -1,0 +1,9 @@
+name: Practice projects Issues
+on:
+  issues:
+jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check issues
+        run: echo "${{ toJson(github) }}"
