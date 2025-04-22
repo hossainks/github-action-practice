@@ -2,7 +2,7 @@ name: Root projects test
 on:
   push:
     paths:
-      - '**'
+      - 'package.json'
       - '!practise-project1/**'
   workflow_dispatch:
 jobs:
