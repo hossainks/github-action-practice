@@ -1,9 +1,7 @@
-name: Deploy projects
+name: Root projects test
 on:
-  push:
-    paths-ignore:
-      - practise-project1
-  workflow_dispatch:
+  - push
+  - workflow_dispatch
 jobs:
   test:
     runs-on: ubuntu-latest
