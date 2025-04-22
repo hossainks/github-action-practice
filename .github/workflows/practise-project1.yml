@@ -1,4 +1,4 @@
-name: Deploy projects
+name: Practice projects
 on:
   push:
     paths:
