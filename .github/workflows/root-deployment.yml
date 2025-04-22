@@ -1,7 +1,9 @@
 name: Deploy projects
 on:
-  - push
-  - workflow_dispatch
+  push:
+    paths-ignore:
+      - practise-project1
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest
